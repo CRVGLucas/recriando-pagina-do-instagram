@@ -1,0 +1,150 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.app-download {
+    background-size: cover;
+    height: 3rem;
+    width: 10rem;
+}
+
+.app-download:nth-child(1) {
+    background-image: url('./img/apple-button.png');
+}
+
+.app-download:nth-child(2) {
+    background-image: url('./img/googleplay-button.png');
+}
+
+body {
+    background-color: rgb(243,243,243);
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    min-height: 100vh;
+    width: 100%;
+}
+
+.download {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem;
+}
+
+.get-the-app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 1.3rem 0;
+}
+
+.group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background-color: #ffffff;
+    width: 100%;
+    padding: 1.3rem 0;
+    border: 1px solid lightgray;
+}
+
+.group:nth-child(1) {
+    min-height: 19rem;
+}
+
+.instagram-continue {
+    display: flex;
+    align-items: center; 
+    justify-content: space-around;
+    flex-direction: column;
+    width: 50%;
+    min-height: 34rem;
+}
+
+.instagram-logo {
+    height: 3rem;
+}
+
+.instagram-logout {
+    color: #0095f6;
+    margin-top: 1rem;
+}
+
+.instagram-login {
+    background-color: #0095f6;
+    border-radius: 4px;
+    color: white;
+    padding: 8px;
+}
+
+.instagram-phone {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    width: 50%;
+}
+
+.instagram-phone img {
+    height: 50rem;
+}
+
+.landing-page-instagram-wrapper {
+    align-items: center;
+    display: flex;
+    height: 100vh;
+    justify-content: start;
+    width: 60%;
+}
+
+.link-blue {
+    color: #0095f6;
+}
+
+.not-account {
+    color: rgb(160,160,160);
+}
+
+.profile-photo {
+    align-items: center;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.profile-photo img {
+    height: 6rem;
+}
+
+/* Media queries */
+@media (max-width: 1024px) {
+    .instagram-wrapper {
+        width: 90%;
+    }
+}
+
+@media (max-width: 650px){
+    body {
+        background: white;
+    }
+    .instagram-wrapper {
+        width: 90%;
+    }
+    .instagram-phone {
+        display: none;
+    }
+    .instagram-continue {
+        width: 100%;
+    }
+}  
